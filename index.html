@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>DARKHACKERMOVIES - Stream Movies & TV Shows</title>
+    <meta name="description" content="Stream and download your favorite movies and TV shows in HD quality" />
+    <meta name="author" content="DarkHacker" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#e11d48" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DARKHACKERMOVIES" />
+    
+    <!-- TV / Smart Display support -->
+    <meta name="supported-color-schemes" content="dark" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/icon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+    
+    <meta property="og:title" content="DARKHACKER MOVIES - Stream Movies, TV Shows & Live Sports" />
+    <meta property="og:description" content="Stream movies, TV shows, live sports, music and news in HD quality on DARKHACKER MOVIES." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mrdarkhackermovies.com" />
+    <meta property="og:image" content="https://files.catbox.moe/qcakk5.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="DAEKHACKER MOVIES" />
+    <meta property="og:site_name" content="DARKHACKER MOVIES" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DARKHACKER MOVIES - Stream Movies, TV Shows & Live Sports" />
+    <meta name="twitter:description" content="Stream movies, TV shows, live sports, music and news in HD quality." />
+    <meta name="twitter:image" content="https://files.catbox.moe/qcakk5.png" />
+
+    <!-- Prevent Vite dev-server from auto-reloading the page on WebSocket reconnects.
+         Replit's proxy drops WS every ~30 s; Vite then calls location.reload().
+         We allow reload() only when the user clicked something within the last 600 ms. -->
+    <script>
+      (function () {
+        var _lastClick = 0;
+        document.addEventListener('click', function () { _lastClick = Date.now(); }, true);
+        var _realReload = location.reload.bind(location);
+        location.reload = function () {
+          if (Date.now() - _lastClick < 600) {
+            _realReload();
+          }
+        };
+      })();
+    </script>
+
+    <!-- Remove any external watermark/badge injected by build tools -->
+    <style>
+      #lovable-badge,
+      [id*="lovable"],
+      [class*="lovable-badge"],
+      [id*="gpteng"],
+      [data-testid="lovable-badge"],
+      a[href*="lovable.app"],
+      a[href*="gpteng.co"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    </style>
+    <script>
+      (function () {
+        var sel = '#lovable-badge,[id*="lovable"],[class*="lovable-badge"],[id*="gpteng"],a[href*="lovable.app"],a[href*="gpteng.co"]';
+        function removeBadge() {
+          document.querySelectorAll(sel).forEach(function (el) { el.remove(); });
+        }
+        var obs = new MutationObserver(removeBadge);
+        document.addEventListener('DOMContentLoaded', function () {
+          removeBadge();
+          obs.observe(document.body, { childList: true, subtree: true });
+        });
+      })();
+    </script>
+
+    <style>
+      /* TV-friendly focus styles for D-pad navigation */
+      @media (pointer: coarse) and (min-width: 960px) {
+        :focus-visible {
+          outline: 3px solid hsl(346 77% 50%);
+          outline-offset: 3px;
+          border-radius: 8px;
+        }
+        button, a, [role="button"], [tabindex] {
+          min-height: 48px;
+          min-width: 48px;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="/index-Cz0yYddx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-IR_QqjGN.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- ── DevTools protection (production only) ── -->
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script>
+    (function () {
+      // Do not run on iOS — the window-size heuristic fires false positives there
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) return;
+
+      // 1. debugger timing — open DevTools pauses execution here noticeably
+      setInterval(function () {
+        var start = performance.now();
+        // eslint-disable-next-line no-debugger
+        debugger;
+        var elapsed = performance.now() - start;
+        if (elapsed > 100) {
+          document.body.innerHTML = '<center style="font-family:sans-serif;margin-top:20vh;color:#e11d48"><h2>DevTools detected.</h2><p>Please close DevTools and refresh the page.</p></center>';
+          setTimeout(function () { location.reload(); }, 3000);
+        }
+      }, 1000);
+
+      // 2. window size — detached DevTools panel widens the outer window
+      setInterval(function () {
+        var threshold = 160;
+        if (
+          window.outerWidth - window.innerWidth > threshold ||
+          window.outerHeight - window.innerHeight > threshold
+        ) {
+          document.body.innerHTML = '<center style="font-family:sans-serif;margin-top:20vh;color:#e11d48"><h2>Simply close DevTools \uD83D\uDDFF</h2></center>';
+        }
+      }, 500);
+
+      // 3. Eruda (mobile DevTools replacement) detection
+      (function checkEruda() {
+        if (typeof eruda !== 'undefined') {
+          document.body.innerHTML = '<center style="font-family:sans-serif;margin-top:20vh;color:#e11d48"><h2>Inspect tools are not allowed here.</h2></center>';
+        } else {
+          setTimeout(checkEruda, 1000);
+        }
+      })();
+    })();
+    </script>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js")
+      .then(registration => {
+        console.log("[SW] Registered:", registration.scope);
+      })
+      .catch(error => {
+        console.error("[SW] Registration failed:", error);
+      });
+  });
+}
+</script> 
+
+ </body>
+</html>

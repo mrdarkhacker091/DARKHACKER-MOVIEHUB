@@ -1,0 +1,14 @@
+# WEBSITE CODE EXTRACTION REPORT
+
+Website: https://www.davex-moviezone.zone.id
+Extraction Date: 2026-05-02 09:53:49
+
+## Summary:
+- HTML FILES: 1
+- CSS FILES: 1
+- JAVASCRIPT FILES: 2
+- PHP FILES: 3
+- API ENDPOINTS: 0
+- WORKERS.DEV URLs: 0
+
+⚡ POWERED BY OLD-STUDIO

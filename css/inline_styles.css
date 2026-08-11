@@ -1,0 +1,31 @@
+
+      #lovable-badge,
+      [id*="lovable"],
+      [class*="lovable-badge"],
+      [id*="gpteng"],
+      [data-testid="lovable-badge"],
+      a[href*="lovable.app"],
+      a[href*="gpteng.co"] {
+        display: none !important;
+        visibility: hidden !important;
+        opacity: 0 !important;
+        pointer-events: none !important;
+      }
+    
+
+/* ===== INLINE CSS ===== */
+
+
+      /* TV-friendly focus styles for D-pad navigation */
+      @media (pointer: coarse) and (min-width: 960px) {
+        :focus-visible {
+          outline: 3px solid hsl(346 77% 50%);
+          outline-offset: 3px;
+          border-radius: 8px;
+        }
+        button, a, [role="button"], [tabindex] {
+          min-height: 48px;
+          min-width: 48px;
+        }
+      }
+    

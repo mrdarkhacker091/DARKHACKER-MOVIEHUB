@@ -34870,11 +34870,11 @@ const Rd = ({
     }],
     rne = [{
         icon: G5,
-        href: "https://whatsapp.com/channel/0029VbCppN59WtC9bfyV5t2C",
+        href: "https://whatsapp.com/channel/0029VbDb8rj2ER6gbPAYh90B",
         label: "WhatsApp"
     }, {
         icon: Ks,
-        href: "http://www.davexmainweb.zone.id/",
+        href: "http://www.mrdarkhacker.com",
         label: "Website"
     }, {
         icon: Vg,
@@ -34902,7 +34902,7 @@ const Rd = ({
                             className: "inline-block mb-4",
                             children: l.jsxs("span", {
                                 className: "font-black text-2xl tracking-tight text-white leading-none",
-                                children: ["DAEKHACKER", l.jsx("span", {
+                                children: ["DARKHACKER", l.jsx("span", {
                                     className: "text-red-500",
                                     children: "MOVIES"
                                 })]
@@ -35004,7 +35004,7 @@ const Rd = ({
                         className: "text-white/25 text-xs",
                         children: ["Built by ", l.jsx("span", {
                             className: "text-white/45 font-medium",
-                            children: "Dave Tech"
+                            children: "Dark Tech"
                         })]
                     })]
                 })]
@@ -41552,7 +41552,7 @@ const nie = "https://moviexsubtitles.abrahamdw882.workers.dev/",
                             children: "Download App"
                         })]
                     }), l.jsxs("a", {
-                        href: "https://whatsapp.com/channel/0029VbCppN59WtC9bfyV5t2C",
+                        href: "https://whatsapp.com/channel/0029VbDb8rj2ER6gbPAYh90B",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "flex items-center gap-4 rounded-2xl bg-[#075E54]/20 border border-[#25D366]/30 p-4 hover:bg-[#075E54]/30 transition-colors group",
@@ -41576,7 +41576,7 @@ const nie = "https://moviexsubtitles.abrahamdw882.workers.dev/",
                                 children: "Get latest movie updates, new releases & more"
                             }), l.jsx("p", {
                                 className: "text-[#25D366]/70 text-[10px] mt-1 font-mono truncate",
-                                children: "whatsapp.com/channel/0029VawCel7GOj9ktLjkxQ3g"
+                                children: "whatsapp.com/channel/0029VbDb8rj2ER6gbPAYh90B"
                             })]
                         }), l.jsx("div", {
                             className: "flex-shrink-0 text-[#25D366] group-hover:translate-x-1 transition-transform",
@@ -41594,7 +41594,7 @@ const nie = "https://moviexsubtitles.abrahamdw882.workers.dev/",
                             })
                         })]
                     }), l.jsxs("a", {
-                        href: "https://whatsapp.com/channel/0029VbCppN59WtC9bfyV5t2C",
+                        href: "https://whatsapp.com/channel/0029VbDb8rj2ER6gbPAYh90B",
                         target: "_blank",
                         rel: "noopener noreferrer",
                         className: "flex items-center gap-3 rounded-xl bg-zinc-900 border border-white/10 px-4 py-3 hover:border-white/20 hover:bg-zinc-800 transition-colors group",
@@ -41608,10 +41608,10 @@ const nie = "https://moviexsubtitles.abrahamdw882.workers.dev/",
                             className: "flex-1",
                             children: [l.jsx("p", {
                                 className: "text-white text-sm font-semibold",
-                                children: "Visit DaveTech Channel"
+                                children: "Visit Darkhacker Channel"
                             }), l.jsx("p", {
                                 className: "text-gray-500 text-xs",
-                                children: "News, movies & tech content by Dave Tech"
+                                children: "News, movies & tech content by Dark Tech"
                             })]
                         }), l.jsxs("span", {
                             className: "text-gray-500 text-xs flex items-center gap-1 group-hover:text-[#25D366] transition-colors",
@@ -44066,248 +44066,6 @@ function DA(e) {
 function LA(e) {
     return e || document.head
 }
-var yae = class extends y.Component {
-    constructor(e) {
-        super(e), this._hcaptcha = void 0, this.renderCaptcha = this.renderCaptcha.bind(this), this.resetCaptcha = this.resetCaptcha.bind(this), this.removeCaptcha = this.removeCaptcha.bind(this), this.isReady = this.isReady.bind(this), this._onReady = null, this.loadCaptcha = this.loadCaptcha.bind(this), this.handleOnLoad = this.handleOnLoad.bind(this), this.handleSubmit = this.handleSubmit.bind(this), this.handleExpire = this.handleExpire.bind(this), this.handleError = this.handleError.bind(this), this.handleOpen = this.handleOpen.bind(this), this.handleClose = this.handleClose.bind(this), this.handleChallengeExpired = this.handleChallengeExpired.bind(this), this.ref = y.createRef(), this.apiScriptRequested = !1, this.sentryHub = null, this.captchaId = "", this._pendingExecute = null, this.state = {
-            isApiReady: !1,
-            isRemoved: !1,
-            elementId: e.id
-        }
-    }
-    componentDidMount() {
-        let e = LA(this.props.scriptLocation),
-            t = DA(e);
-        if (this._hcaptcha = t.window.hcaptcha || void 0, typeof this._hcaptcha < "u") {
-            this.setState({
-                isApiReady: !0
-            }, () => {
-                this.renderCaptcha()
-            });
-            return
-        }
-        this.loadCaptcha()
-    }
-    componentWillUnmount() {
-        let e = this._hcaptcha,
-            t = this.captchaId;
-        if (this._cancelPendingExecute("react-component-unmounted"), !!this.isReady()) try {
-            e.reset(t), e.remove(t)
-        } catch {} finally {
-            this.captchaId = "", this._onReady = null
-        }
-    }
-    shouldComponentUpdate(e, t) {
-        return !(this.state.isApiReady !== t.isApiReady || this.state.isRemoved !== t.isRemoved)
-    }
-    componentDidUpdate(e) {
-        ["sitekey", "size", "theme", "tabindex", "languageOverride", "endpoint"].every(t => e[t] === this.props[t]) || this.removeCaptcha(() => {
-            this.renderCaptcha()
-        })
-    }
-    loadCaptcha() {
-        if (this.apiScriptRequested) return;
-        let {
-            apihost: e,
-            assethost: t,
-            endpoint: r,
-            host: n,
-            imghost: i,
-            languageOverride: a,
-            reCaptchaCompat: s,
-            reportapi: o,
-            sentry: c,
-            custom: u,
-            loadAsync: f,
-            scriptLocation: d,
-            scriptSource: h,
-            secureApi: p,
-            cleanup: m = !0,
-            userJourneys: g
-        } = this.props;
-        gae({
-            render: "explicit",
-            apihost: e,
-            assethost: t,
-            endpoint: r,
-            hl: a,
-            host: n,
-            imghost: i,
-            recaptchacompat: s === !1 ? "off" : null,
-            reportapi: o,
-            sentry: c,
-            custom: u,
-            loadAsync: f,
-            scriptLocation: d,
-            scriptSource: h,
-            secureApi: p,
-            cleanup: m,
-            uj: g !== void 0 ? g : !1
-        }).then(this.handleOnLoad, this.handleError).catch(this.handleError), this.apiScriptRequested = !0
-    }
-    renderCaptcha(e) {
-        let {
-            onReady: t
-        } = this.props, {
-            isApiReady: r
-        } = this.state, n = this.captchaId;
-        if (!r || n) return;
-        let i = Object.assign({
-                "open-callback": this.handleOpen,
-                "close-callback": this.handleClose,
-                "error-callback": this.handleError,
-                "chalexpired-callback": this.handleChallengeExpired,
-                "expired-callback": this.handleExpire,
-                callback: this.handleSubmit
-            }, this.props, {
-                hl: this.props.hl || this.props.languageOverride,
-                languageOverride: void 0
-            }),
-            a = this._hcaptcha.render(this.ref.current, i);
-        this.captchaId = a, this.setState({
-            isRemoved: !1
-        }, () => {
-            e && e(), t && t(), this._onReady && this._onReady(a)
-        })
-    }
-    resetCaptcha() {
-        let e = this._hcaptcha,
-            t = this.captchaId;
-        this.isReady() && (e.reset(t), this._cancelPendingExecute("hcaptcha-reset"))
-    }
-    removeCaptcha(e) {
-        let t = this._hcaptcha,
-            r = this.captchaId;
-        this._cancelPendingExecute("hcaptcha-removed"), this.isReady() && this.setState({
-            isRemoved: !0
-        }, () => {
-            this.captchaId = "", t.remove(r), e && e()
-        })
-    }
-    handleOnLoad() {
-        this.setState({
-            isApiReady: !0
-        }, () => {
-            let e = LA(this.props.scriptLocation),
-                t = DA(e);
-            this._hcaptcha = t.window.hcaptcha, this.renderCaptcha(() => {
-                let {
-                    onLoad: r
-                } = this.props;
-                r && r()
-            })
-        })
-    }
-    handleSubmit(e) {
-        let {
-            onVerify: t
-        } = this.props, {
-            isRemoved: r
-        } = this.state, n = this._hcaptcha, i = this.captchaId;
-        if (typeof n > "u" || r) return;
-        let a = n.getResponse(i),
-            s = n.getRespKey(i);
-        t && t(a, s)
-    }
-    handleExpire() {
-        let {
-            onExpire: e
-        } = this.props, t = this._hcaptcha, r = this.captchaId;
-        this.isReady() && (t.reset(r), e && e())
-    }
-    handleError(e) {
-        let {
-            onError: t
-        } = this.props, r = this._hcaptcha, n = this.captchaId;
-        this.isReady() && r.reset(n), t && t(e)
-    }
-    isReady() {
-        let {
-            isApiReady: e,
-            isRemoved: t
-        } = this.state;
-        return e && !t
-    }
-    _cancelPendingExecute(e) {
-        if (!this._pendingExecute) return;
-        let t = this._pendingExecute;
-        this._pendingExecute = null;
-        let r = new Error(e);
-        t.reject(r)
-    }
-    handleOpen() {
-        !this.isReady() || !this.props.onOpen || this.props.onOpen()
-    }
-    handleClose() {
-        !this.isReady() || !this.props.onClose || this.props.onClose()
-    }
-    handleChallengeExpired() {
-        !this.isReady() || !this.props.onChalExpired || this.props.onChalExpired()
-    }
-    execute(e = null) {
-        e = typeof e == "object" ? e : null;
-        try {
-            let t = this._hcaptcha,
-                r = this.captchaId;
-            if (e && e.async && this._pendingExecute && this._cancelPendingExecute("hcaptcha-execute-replaced"), !this.isReady()) return e && e.async ? new Promise((i, a) => {
-                this._pendingExecute = {
-                    resolve: i,
-                    reject: a
-                }, this._onReady = s => {
-                    if (this._pendingExecute) try {
-                        let o = t.execute(s, e);
-                        o && typeof o.then == "function" ? o.then(c => {
-                            this._pendingExecute = null, i(c)
-                        }).catch(c => {
-                            this._pendingExecute = null, a(c)
-                        }) : (this._pendingExecute = null, a(new Error("hcaptcha-execute-no-promise")))
-                    } catch (o) {
-                        this._pendingExecute = null, a(o)
-                    }
-                }
-            }) : (this._onReady = i => {
-                t.execute(i, e)
-            }, null);
-            let n = t.execute(r, e);
-            return e && e.async && n && typeof n.then == "function" ? new Promise((i, a) => {
-                this._pendingExecute = {
-                    resolve: i,
-                    reject: a
-                }, n.then(s => {
-                    this._pendingExecute = null, i(s)
-                }).catch(s => {
-                    this._pendingExecute = null, a(s)
-                })
-            }) : n
-        } catch (t) {
-            return e && e.async ? Promise.reject(t) : null
-        }
-    }
-    close() {
-        let e = this._hcaptcha,
-            t = this.captchaId;
-        if (this._cancelPendingExecute("hcaptcha-closed"), !!this.isReady()) return e.close(t)
-    }
-    setData(e) {
-        let t = this._hcaptcha,
-            r = this.captchaId;
-        this.isReady() && (e && typeof e != "object" && (e = null), t.setData(r, e))
-    }
-    getResponse() {
-        return this._hcaptcha.getResponse(this.captchaId)
-    }
-    getRespKey() {
-        return this._hcaptcha.getRespKey(this.captchaId)
-    }
-    render() {
-        let {
-            elementId: e
-        } = this.state;
-        return y.createElement("div", {
-            ref: this.ref,
-            id: e
-        })
-    }
-};
 y.createContext();
 var vae = yae;
 const xae = "f0e45888-fc52-47e8-a830-ccca04a0fb68",
@@ -44537,7 +44295,31 @@ const BA = async (e, t, r, n) => {
                     description: "Password reset link sent to your inbox"
                 }), n("login"))
             } else if (r === "login") {
-                // Captcha verification bypassed
+                if (!k) {
+                    G.error("Please complete the CAPTCHA", {
+                        description: "Tick the box to prove you're human."
+                    })
+                }
+                try {
+                    const z = await (await fetch("", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            token: k
+                        })
+                    })).json();
+                    if (!(z != null && z.success)) {
+                        G.error("CAPTCHA verification failed", {
+                            description: "Please complete the CAPTCHA again."
+                        }), _()
+                    }
+                } catch {
+                    G.error("CAPTCHA check failed", {
+                        description: "Could not reach verification server. Try again."
+                    }), _()
+                }
                 const {
                     error: W
                 } = await Ne.auth.signInWithPassword({
@@ -44558,8 +44340,32 @@ const BA = async (e, t, r, n) => {
                     G.error("Password must be at least 6 characters"), o(!1);
                     return
                 }
-                // Captcha check bypassed for signup
-                // Captcha server verification bypassed
+                if (!k) {
+                    G.error("Please complete the CAPTCHA", {
+                        description: "Tick the box to prove you're human."
+                    }), o(!1);
+                    return
+                }
+                try {
+                    const L = await (await fetch("", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({
+                            token: k
+                        })
+                    })).json();
+                    if (!(L != null && L.success)) {
+                        G.error("CAPTCHA verification failed", {
+                            description: "Please complete the CAPTCHA again."
+                        }), _()
+                    }
+                } catch {
+                    G.error("CAPTCHA check failed", {
+                        description: "Could not reach verification server. Try again."
+                    })
+                }
                 const {
                     data: W,
                     error: B
@@ -44941,7 +44747,7 @@ const BA = async (e, t, r, n) => {
                     className: "text-center mt-4",
                     children: [(r === "login" || r === "signup") && !k && l.jsx("p", {
                         className: "text-xs text-muted-foreground/60 mb-1",
-                        children: "Complete the CAPTCHA above to continue"
+                        children: "Verification required"
                     }), l.jsx("button", {
                         type: "button",
                         onClick: () => {
@@ -66900,7 +66706,7 @@ const MPe = new Intl.DisplayNames(["en"], {
                 console.error("Error:", le), G.error("Failed to delete website")
             }
         }, ue = (Y, le) => {
-            const Be = `<!-- Dave Tech Analytics -->
+            const Be = `<!-- Dark Tech Analytics -->
 <script>
 (function() {
   'use strict';
@@ -67086,7 +66892,7 @@ const MPe = new Intl.DisplayNames(["en"], {
                                     className: "text-xl font-bold flex items-center gap-2",
                                     children: [l.jsx(pa, {
                                         className: "w-5 h-5 text-primary"
-                                    }), "Dave Tech Analytics Admin"]
+                                    }), "Dark Tech Analytics Admin"]
                                 }), l.jsx("p", {
                                     className: "text-sm text-muted-foreground",
                                     children: "Visitor tracking & user management"
@@ -71317,7 +71123,7 @@ const aOe = () => {
                         })]
                     }), l.jsx("p", {
                         className: "text-sm font-bold text-foreground",
-                        children: "Developer Dave Tech"
+                        children: "Developer Dark Tech"
                     }), l.jsxs("div", {
                         className: "flex items-center justify-center gap-2 text-xs text-muted-foreground",
                         children: [l.jsx(ih, {

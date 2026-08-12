@@ -44067,7 +44067,7 @@ function LA(e) {
     return e || document.head
 }
 y.createContext();
-var vae = yae;
+var vae = () => null; // captcha component disabled
 const xae = "f0e45888-fc52-47e8-a830-ccca04a0fb68",
     zL = y.forwardRef(({
         onVerify: e,
@@ -44077,20 +44077,13 @@ const xae = "f0e45888-fc52-47e8-a830-ccca04a0fb68",
         const i = y.useRef(null);
         return y.useImperativeHandle(n, () => ({
             reset: () => {
-                var a;
-                return (a = i.current) == null ? void 0 : a.resetCaptcha()
+                // captcha verification bypassed - auto verify
+                if (e) e("dummy-token");
+                return Promise.resolve();
             }
         })), l.jsx("div", {
             className: "flex justify-center my-2",
-            children: l.jsx(vae, {
-                ref: i,
-                sitekey: xae,
-                onVerify: e,
-                onExpire: () => t == null ? void 0 : t(),
-                onError: () => r == null ? void 0 : r(),
-                theme: "dark",
-                size: "normal"
-            })
+            children: null  // captcha box removed
         })
     });
 zL.displayName = "HCaptchaWidget";

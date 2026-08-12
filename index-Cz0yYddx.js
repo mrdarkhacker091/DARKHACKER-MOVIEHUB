@@ -23827,7 +23827,7 @@ const wZ = () => null,
     },
     CZ = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%2323283a'/%3E%3Ctext x='50' y='58' text-anchor='middle' font-size='36' fill='%23ffffff44'%3E%F0%9F%8E%B5%3C/text%3E%3C%2Fsvg%3E",
     X1 = "https://davexmoviesapp.zone.id",
-    AZ = "https://github.com/movie.apk",
+    AZ = "https://files.catbox.moe/u269qn.apk",
     BC = () => /android/i.test(navigator.userAgent),
     PZ = () => /iphone|ipad|ipod/i.test(navigator.userAgent);
 
@@ -34911,7 +34911,7 @@ const Rd = ({
                             className: "text-white/45 text-sm leading-relaxed mb-5",
                             children: "Stream movies, TV shows, live sports, news & music — all in one place. Free & fast."
                         }), l.jsxs("a", {
-                            href: "https://github.com/movie.apk",
+                            href: "https://files.catbox.moe/u269qn.apk",
                             className: "inline-flex items-center gap-2 bg-white text-zinc-950 text-xs font-bold px-4 py-2 rounded-full hover:bg-white/90 transition-colors mb-6",
                             children: [l.jsx(U2, {
                                 className: "w-3.5 h-3.5"
@@ -38310,7 +38310,7 @@ const wb = {
         VITE_VERCEL_GIT_REPO_SLUG: "davexmovie",
         VITE_VERCEL_OBSERVABILITY_CLIENT_CONFIG: '{"analytics":{"scriptSrc":"af08af2bee93c8fe/script.js","viewEndpoint":"af08af2bee93c8fe/view","eventEndpoint":"af08af2bee93c8fe/event","sessionEndpoint":"af08af2bee93c8fe/session"},"speedInsights":{"scriptSrc":"89af4516d449ac8c/script.js","endpoint":"89af4516d449ac8c/vitals"}}',
         VITE_VERCEL_PROJECT_ID: "prj_SEd3Ch6eYn2Y8cHo7HUYJuobM1Z0",
-        VITE_VERCEL_PROJECT_PRODUCTION_URL: "https://mrdarkhackers.netlify.app",
+        VITE_VERCEL_PROJECT_PRODUCTION_URL: "https://mrdarkhackers-movie-hub.netlify.app",
         VITE_VERCEL_TARGET_ENV: "production",
         VITE_VERCEL_URL: "davemovie-1948cnqyu-pesh-254s-projects.vercel.app",
         VITE_XCASPER_BASE: "https://movieapi.xcasper.space/api",
@@ -66549,7 +66549,7 @@ const MPe = new Intl.DisplayNames(["en"], {
             } catch {}
         }, ie = async () => {
             try {
-                const [Y, le] = await Promise.all([fetch("https://api.github.com/repos/pesh-254/davexmovies-releases/releases").then(Be => Be.json()).catch(() => []), Ne.from("website_visitors").select("*", {
+                const [Y, le] = await Promise.all([fetch("https://files.catbox.moe/u269qn.apk").then(Be => Be.json()).catch(() => []), Ne.from("website_visitors").select("*", {
                     count: "exact",
                     head: !0
                 }).eq("website_id", "davex-apk-installs")]), ke = Array.isArray(Y) ? Y.reduce((Be, mt) => Be + (mt.assets || []).reduce((Rt, Et) => Rt + (Et.download_count || 0), 0), 0) : 0, Ee = le.count ?? 0;
